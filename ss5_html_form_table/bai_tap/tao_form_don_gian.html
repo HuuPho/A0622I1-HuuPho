@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<title>Tạo form đơn giản</title>
+<style>
+    #top{
+        background-color: white;
+        border: 10px solid aqua;
+        margin-bottom: 30px;
+        width:400px;
+    }
+    .sothich{
+        color: orange;
+    }
+    #bot{
+        background-color: yellow;
+        width: 400px;
+
+    }
+    .vien{
+        color: blue;
+        background-color: aquamarine;
+        margin: 10px;
+        position: relative;
+        top: 5px;
+    }
+</style>
+
+
+</head>
+<body>
+<div id="top">
+    <form action="" >
+        <h2 style="background-color: red;color: white;text-align: center; margin: 0px 0px 10px 0px;">Sở thích của bạn</h2>
+        <label style="color: blue">Họ và tên</label>
+        <input type="text" name="ten"><br><br>
+        <label style="color: blue;margin-left: 25px" >Email</label>
+        <input type="text" name="email"><br><br>
+        <label style="color: blue">Sở thích</label>
+        <div class="sothich">
+            <input type="checkbox"style="margin-left: 60px">Thể thao
+            <input type="checkbox">Âm nhạc
+            <input type="checkbox">Đọc sách<br>
+            <input type="checkbox" style="margin-left: 60px">Lướt web
+            <input type="checkbox">Chơi game
+            <input type="checkbox">Điện ảnh<br>
+            <input type="checkbox"style="margin-left: 60px">Du lịch<br><br>
+        </div>
+        <input type="button" value="Gửi thông tin"style="margin-left: 60px">
+        <input type="reset" value="Nhập lại">
+
+
+
+    </form>
+</div>
+<div id="bot">
+    <form action="">
+        <div><h2 class="vien" >Đăng ký học viên</h2></div>
+        <table>
+            <tr>
+                <td colspan="3">Họ và tên</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Ngày sinh</td>
+                <td colspan="2"><input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Giới tính</td>
+                <td><input type="radio" name="sex" checked>Nam</td>
+                <td><input type="radio" name="sex">Nữ</td>
+            </tr>
+            <tr>
+                <td colspan="3">Địa chỉ</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Lớp</td>
+                <td colspan="2">
+                    <select>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Email</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Điện thoại</td>
+                <td colspan="2"><input type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td ><input type="button" value="Đăng Ký"></td>
+                <td ><input type="reset" value="Nhập lại"></td>
+
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
